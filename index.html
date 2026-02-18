@@ -1,70 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>thedeen.app — Nonprofit Islamic Apps</title>
-  <meta name="description" content="Free, offline-first, privacy-focused Islamic apps. No ads. Built as a nonprofit.">
-  <link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thedeen.app — Nonprofit Islamic Apps</title>
+    <meta
+      name="description"
+      content="Free, offline-first, privacy-focused Islamic apps. No ads. Built as a nonprofit."
+    />
+    <link rel="icon" type="image/png" href="/assets/icons/logo.png" />
+    <link rel="apple-touch-icon" href="/assets/icons/logo.png" />
+    <meta name="theme-color" content="#145233" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <main class="landing" role="main">
+      <header class="landing__header">
+        <h1 class="landing__brand">thedeen.app</h1>
+        <p class="landing__tagline">
+          Nonprofit Islamic apps — free, private, offline-first.
+        </p>
+      </header>
 
-  <main class="landing" role="main">
+      <section class="app-grid" aria-label="Our apps">
+        <a href="/ramadan-tracker" class="card">
+          <div class="card__icon">
+            <img
+              src="/assets/icons/ramadan-tracker.png"
+              alt=""
+              width="56"
+              height="56"
+            />
+          </div>
+          <div class="card__text">
+            <div class="card__title">Ramadan Tracker</div>
+            <div class="card__subtitle">Track your daily Ramadan worship</div>
+          </div>
+        </a>
 
-    <header class="landing__header">
-      <h1 class="landing__brand">thedeen.app</h1>
-      <p class="landing__tagline">Nonprofit Islamic apps — free, private, offline-first.</p>
-    </header>
+        <a href="/umrah-guide" class="card">
+          <div class="card__icon">
+            <img
+              src="/assets/icons/umrah-guide.png"
+              alt=""
+              width="56"
+              height="56"
+            />
+          </div>
+          <div class="card__text">
+            <div class="card__title">Umrah &amp; Hajj Guide</div>
+            <div class="card__subtitle">Step-by-step pilgrimage companion</div>
+          </div>
+        </a>
 
-    <section class="app-grid" aria-label="Our apps">
+        <div class="card card--placeholder" aria-hidden="true">
+          <div class="card__icon">
+            <img
+              src="/assets/icons/coming-soon.svg"
+              alt=""
+              width="56"
+              height="56"
+            />
+          </div>
+          <div class="card__text">
+            <div class="card__title">More coming soon</div>
+            <div class="card__subtitle">In shaa Allah</div>
+          </div>
+        </div>
+      </section>
 
-      <a href="/ramadan-tracker" class="card">
-        <div class="card__icon">
-          <img src="/assets/icons/ramadan-tracker.svg" alt="" width="56" height="56">
-        </div>
-        <div class="card__text">
-          <div class="card__title">Ramadan Tracker</div>
-          <div class="card__subtitle">Track your daily Ramadan worship</div>
-        </div>
-      </a>
-
-      <a href="/umrah-guide" class="card">
-        <div class="card__icon">
-          <img src="/assets/icons/umrah-guide.svg" alt="" width="56" height="56">
-        </div>
-        <div class="card__text">
-          <div class="card__title">Umrah &amp; Hajj Guide</div>
-          <div class="card__subtitle">Step-by-step pilgrimage companion</div>
-        </div>
-      </a>
-
-      <div class="card card--placeholder" aria-hidden="true">
-        <div class="card__icon">
-          <img src="/assets/icons/coming-soon.svg" alt="" width="56" height="56">
-        </div>
-        <div class="card__text">
-          <div class="card__title">More coming soon</div>
-          <div class="card__subtitle">In shaa Allah</div>
-        </div>
+      <div class="trust-strip" role="list" aria-label="Our values">
+        <span class="chip" role="listitem">Offline-first PWA</span>
+        <span class="chip" role="listitem">Privacy-focused</span>
+        <span class="chip" role="listitem">No ads</span>
+        <span class="chip" role="listitem">No Sign-up Required</span>
       </div>
 
-    </section>
+      <footer class="landing__footer">
+        <p>A nonprofit effort to serve the Ummah.</p>
+        <p>
+          Made with love by
+          <a
+            href="https://github.com/siddiqss"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@siddiqss</a
+          >
+          and
+          <a
+            href="https://instagram.com/artiqua_"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@artiqua_</a
+          >
+        </p>
+      </footer>
+    </main>
 
-    <div class="trust-strip" role="list" aria-label="Our values">
-      <span class="chip" role="listitem">Offline-first PWA</span>
-      <span class="chip" role="listitem">Privacy-focused</span>
-      <span class="chip" role="listitem">No ads</span>
-      <span class="chip" role="listitem">Basic analytics only</span>
-    </div>
-
-    <footer class="landing__footer">
-      <p>A nonprofit effort to serve the Ummah.</p>
-    </footer>
-
-  </main>
-
-  <script src="/scripts/main.js" defer></script>
-  <!-- Cloudflare Web Analytics -->
-  <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script> -->
-</body>
+    <script src="/scripts/main.js" defer></script>
+    <!-- Cloudflare Web Analytics -->
+    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script> -->
+  </body>
 </html>
